@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Header } from "../components/header/header";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -14,8 +15,10 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <h1>STEFANONLINE</h1>
+            <Header />
+            <h1 className="text-3xl font-bold italic underline">
+                STEFANONLINE
+            </h1>
         </div>
     );
 };
