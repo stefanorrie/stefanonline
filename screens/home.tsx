@@ -23,6 +23,7 @@ export const Home: NextPage = () => {
                     <div className="mt-10 h-max flex justify-center">
                         <h1 className="text-3xl">Stefán Orri Eyþórsson</h1>
                     </div>
+
                     <div className="pt-10 px-60 select-none flex justify-center content-center">
                         Yeah, look, when I was in jail, I was lowkey (Uh) Shout
                         out to supporters that wrote me Eat food, work out and
