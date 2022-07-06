@@ -46,7 +46,15 @@ export const Home: NextPage = () => {
                         </section>
                     </div>
                     <section className={styles.over}>
-                        My work
+                        <div className="mt-10 h-max flex justify-center">
+                            <h1 className="text-3xl">My Work</h1>
+                        </div>
+                        <Image
+                            src={"/StefanMynd.jpg"}
+                            height="300"
+                            width="300"
+                        ></Image>
+
                         <div className={styles.textBox}>
                             Verdana was a popular sans-serif font in early
                             2000s. This was because it was used for Microsoft
@@ -55,7 +63,7 @@ export const Home: NextPage = () => {
                             screens, but isn't recommended for high quality
                             print. For these reasons, it is such a popular font.
                             Verdana was a challenge to find a good similar
-                            looking font.
+                            looking font.n
                         </div>
                     </section>
                 </div>

@@ -121,14 +121,15 @@
 }
 
 .wrapper {
-    height: 150vh;
+    /* height of first slide */
+    height: 170vh;
 }
 
 .over {
-    margin-top: -90vh;
+    margin-top: -110vh;
     position: relative;
     background-color: #fff;
-    height: 100vh;
+    height: 200vh;
 }
 
 .textBox {

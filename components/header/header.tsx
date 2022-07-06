@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
 import { motion } from "framer-motion";
+import { useCallback, useEffect, useState } from "react";
 
 const svgVariants = {
     hidden: { y: -1000 },
@@ -27,14 +28,31 @@ const oVariant = {
 };
 
 export const Header = () => {
+    const [socialShown, setSocialShown] = useState<boolean>(false);
+    const onScroll = useCallback((event: any) => {
+        const { scrollY } = window;
+        if (scrollY >= 100) {
+            setSocialShown(true);
+        } else {
+            setSocialShown(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll, { passive: true });
+    }, []);
+
     return (
         // <div className="pb-24 fixed">
-        <div
-            className={` flex justify-center sticky top-0 ${styles.headerBlur}`}
-        >
-            <div className="headerBlur">
-                <div className="cursor-pointer">
-                    {/* setja scroll to top virkni á header */}
+        <div className={`sticky top-0 ${styles.headerBlur}`}>
+            <div className=" flex justify-center flex-row">
+                {/* setja scroll to top virkni á header */}
+                <div
+                    className="cursor-pointer"
+                    onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                >
                     <motion.div style={{ width: 150, height: 60 }}>
                         <motion.svg
                             variants={svgVariants}
@@ -60,6 +78,23 @@ export const Header = () => {
                         </motion.svg>
                     </motion.div>
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: socialShown ? 1 : 0 }}
+                >
+                    <div
+                        className={`absolute right-0 flex justify-between w-20 pt-4 mr-3`}
+                    >
+                        <Image
+                            src="/instagram.svg"
+                            width="21px"
+                            height="21px"
+                        />
+                        <Image src="/facebook.svg" width="20px" height="20px" />
+                        <Image src="/linkedin.svg" width="20px" height="20px" />
+                    </div>
+                </motion.div>
             </div>
         </div>
     );
