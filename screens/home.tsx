@@ -16,7 +16,7 @@ export const Home: NextPage = () => {
                 <div className="sticky top-0 z-10">
                     <Header />
                 </div>
-                <div className="container flex flex-col content-center justify-center">
+                <div className=" flex flex-col content-center justify-center px-80">
                     <div className={styles.wrapper}>
                         <section className={styles.under}>
                             <div className="mt-10 h-max flex justify-center">
@@ -24,7 +24,7 @@ export const Home: NextPage = () => {
                                     Stefán Orri Eyþórsson
                                 </h1>
                             </div>
-                            <div className="pt-10 px-60 select-none flex justify-center content-center">
+                            <div className={styles.textBox}>
                                 Yeah, look, when I was in jail, I was lowkey
                                 (Uh) Shout out to supporters that wrote me Eat
                                 food, work out and then go sleep You know I'm
@@ -46,7 +46,8 @@ export const Home: NextPage = () => {
                         </section>
                     </div>
                     <section className={styles.over}>
-                        <div className="pt-10 px-60 select-none flex justify-center content-center ">
+                        My work
+                        <div className={styles.textBox}>
                             Verdana was a popular sans-serif font in early
                             2000s. This was because it was used for Microsoft
                             products. It features a large x-height, and wide
