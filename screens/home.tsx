@@ -63,7 +63,7 @@ export const Home: NextPage = () => {
                         </div>
                         <div className="mt-10 h-max flex justify-center">
                             <Image
-                                src={"/StefanMynd.jpg"}
+                                src={"/static/StefanMynd.jpg"}
                                 height="300"
                                 width="300"
                                 alt="me"
