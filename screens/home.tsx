@@ -67,7 +67,7 @@ export const Home: NextPage = () => {
                                 height="300"
                                 width="300"
                                 alt="me"
-                            ></Image>
+                            />
                         </div>
 
                         <div className={`${styles.textBox} w-8/12`}>

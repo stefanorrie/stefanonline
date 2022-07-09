@@ -138,7 +138,7 @@
 @media (max-width: 520px) {
     /* For mobile phones: */
     .wrapper {
-        height: 215vh;
+        height: 185vh;
     }
     .under {
         top: 20px;
