@@ -16,7 +16,7 @@ export const Home: NextPage = () => {
                 <div className="sticky top-0 z-10">
                     <Header />
                 </div>
-                <div className=" flex flex-col content-center justify-center px-80">
+                <div className="flex-col content-center flex">
                     <div className={styles.wrapper}>
                         <section className={styles.under}>
                             <div className="mt-10 h-max flex justify-center">
@@ -24,24 +24,36 @@ export const Home: NextPage = () => {
                                     Stefán Orri Eyþórsson
                                 </h1>
                             </div>
-                            <div className={styles.textBox}>
-                                Yeah, look, when I was in jail, I was lowkey
-                                (Uh) Shout out to supporters that wrote me Eat
-                                food, work out and then go sleep You know I'm
-                                prayin', He carryin' both feet (Yeah) **** know
-                                we got God with us (God with us) You look at me
-                                and see a God figure (Uh) And when I start
-                                vibin', I know that He with me And I'ma always
-                                catch a hard shiver (Uh) I know it's demons in
-                                that dark liquor (Uh) We buy a bottle and squash
-                                with ya (Uh) Everybody turn into a harsh ****
-                                But my pockets bigger and my heart richer (Uh)
-                                My mind smarter, my grind harder (Skrr) And my
-                                car quicker (Skrrt) I met her in church, she
-                                pray for me She my God-sister (She my
-                                God-sister, yeah) I'm only trustin' the people I
-                                keep close **** sellin' they soul for a repost
-                                Remember when I was broke, wearin' cheap coats{" "}
+                            <div className=" w-screen justify-center ">
+                                <div className={`${styles.textBox} w-3/6`}>
+                                    My name is Stefán Orri and I am a software
+                                    developer. I work at a Icelandic software
+                                    company called Sendiráðið located in
+                                    Reykjavík. I currently mostly do front end
+                                    work where my interest lies but I intend on
+                                    getting more experience in app developing
+                                    and the backend later on in my career.
+                                    Current technologies we use are NextJS with
+                                    TypeScript.
+                                    <br />
+                                    <br />I am set to graduate university after
+                                    this semester, where I am currently only
+                                    doing my final project and a single other
+                                    course, then I will have aquired a BSc.
+                                    degree in Software Engineering from
+                                    Reykjavik University. I will possibly be
+                                    able to apply to become a Computer Scientist
+                                    post graduation.
+                                    <br />
+                                    <br />
+                                    Most of the coding work I have done have
+                                    been various school projects but these days
+                                    my main projects are sites I make at work.
+                                    As for personal coding projects to show off,
+                                    this website is currently the only personal
+                                    project I can show off but this site will
+                                    showcase future projects.
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -49,13 +61,15 @@ export const Home: NextPage = () => {
                         <div className="mt-10 h-max flex justify-center">
                             <h1 className="text-3xl">My Work</h1>
                         </div>
-                        <Image
-                            src={"/StefanMynd.jpg"}
-                            height="300"
-                            width="300"
-                        ></Image>
+                        <div className="mt-10 h-max flex justify-center">
+                            <Image
+                                src={"/StefanMynd.jpg"}
+                                height="300"
+                                width="300"
+                            ></Image>
+                        </div>
 
-                        <div className={styles.textBox}>
+                        <div className={`${styles.textBox} w-3/6`}>
                             Verdana was a popular sans-serif font in early
                             2000s. This was because it was used for Microsoft
                             products. It features a large x-height, and wide

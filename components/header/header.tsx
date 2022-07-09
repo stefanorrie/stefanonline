@@ -40,7 +40,7 @@ export const Header = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", onScroll, { passive: true });
-    }, []);
+    }, [onScroll]);
 
     return (
         // <div className="pb-24 fixed">
