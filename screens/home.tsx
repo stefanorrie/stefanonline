@@ -16,16 +16,16 @@ export const Home: NextPage = () => {
                 <div className="sticky top-0 z-10">
                     <Header />
                 </div>
-                <div className="flex-col content-center flex">
+                <div className="flex-col flex pt-5 pb-5">
                     <div className={styles.wrapper}>
                         <section className={styles.under}>
-                            <div className="mt-10 h-max flex justify-center">
+                            <div className="flex justify-center">
                                 <h1 className="text-3xl">
                                     Stefán Orri Eyþórsson
                                 </h1>
                             </div>
-                            <div className=" w-screen justify-center ">
-                                <div className={`${styles.textBox} w-3/6`}>
+                            <div className=" w-screen ">
+                                <div className={`${styles.textBox} w-8/12`}>
                                     My name is Stefán Orri and I am a software
                                     developer. I work at a Icelandic software
                                     company called Sendiráðið located in
@@ -66,10 +66,11 @@ export const Home: NextPage = () => {
                                 src={"/StefanMynd.jpg"}
                                 height="300"
                                 width="300"
+                                alt="me"
                             ></Image>
                         </div>
 
-                        <div className={`${styles.textBox} w-3/6`}>
+                        <div className={`${styles.textBox} w-8/12`}>
                             Verdana was a popular sans-serif font in early
                             2000s. This was because it was used for Microsoft
                             products. It features a large x-height, and wide

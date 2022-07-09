@@ -121,8 +121,28 @@
 }
 
 .wrapper {
-    /* height of first slide */
+    /* height of first slide 185vh */
     height: 185vh;
+}
+
+@media (min-width: 520px) and (max-width: 620px) {
+    /* For mobile phones: */
+    .wrapper {
+        height: 197vh;
+    }
+    .under {
+        top: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* For mobile phones: */
+    .wrapper {
+        height: 215vh;
+    }
+    .under {
+        top: 20px;
+    }
 }
 
 .over {
@@ -133,10 +153,10 @@
 }
 
 .textBox {
-    max-width: 700px;
-    /* min-width: 400px; */
+    max-width: 450px;
+
     padding-top: 30px;
-    /* padding: 30px 100px 0px; */
+
     margin-left: auto;
     margin-right: auto;
     min-height: 80vh;

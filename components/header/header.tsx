@@ -90,9 +90,20 @@ export const Header = () => {
                             src="/instagram.svg"
                             width="21px"
                             height="21px"
+                            alt="instagram"
                         />
-                        <Image src="/facebook.svg" width="20px" height="20px" />
-                        <Image src="/linkedin.svg" width="20px" height="20px" />
+                        <Image
+                            src="/facebook.svg"
+                            width="20px"
+                            height="20px"
+                            alt="facebook"
+                        />
+                        <Image
+                            src="/linkedin.svg"
+                            width="20px"
+                            height="20px"
+                            alt="linkedin"
+                        />
                     </div>
                 </motion.div>
             </div>
