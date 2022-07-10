@@ -86,24 +86,45 @@ export const Header = () => {
                     <div
                         className={`absolute right-0 flex justify-between w-20 pt-4 mr-3`}
                     >
-                        <Image
-                            src="/instagram.svg"
-                            width="21px"
-                            height="21px"
-                            alt="instagram"
-                        />
-                        <Image
-                            src="/facebook.svg"
-                            width="20px"
-                            height="20px"
-                            alt="facebook"
-                        />
-                        <Image
-                            src="/linkedin.svg"
-                            width="20px"
-                            height="20px"
-                            alt="linkedin"
-                        />
+                        <Link
+                            href={"https://www.instagram.com/stefanorrie/"}
+                            passHref
+                        >
+                            <a target="_blank">
+                                <Image
+                                    src="/instagram.svg"
+                                    width="21px"
+                                    height="21px"
+                                    alt="instagram"
+                                />
+                            </a>
+                        </Link>
+                        <Link
+                            href={"https://www.facebook.com/stefanorrie/"}
+                            passHref
+                        >
+                            <a target="_blank">
+                                <Image
+                                    src="/facebook.svg"
+                                    width="20px"
+                                    height="20px"
+                                    alt="facebook"
+                                />
+                            </a>
+                        </Link>
+                        <Link
+                            href={"https://www.linkedin.com/in/stefanorrie/"}
+                            passHref
+                        >
+                            <a target="_blank">
+                                <Image
+                                    src="/linkedin.svg"
+                                    width="20px"
+                                    height="20px"
+                                    alt="linkedin"
+                                />
+                            </a>
+                        </Link>
                     </div>
                 </motion.div>
             </div>
