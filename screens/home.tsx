@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Header } from "../components/header/header";
 import styles from "../styles/Home.module.css";
+import me from "../public/static/StefanMynd.jpg";
 
 export const Home: NextPage = () => {
     return (
@@ -63,10 +64,10 @@ export const Home: NextPage = () => {
                         </div>
                         <div className="mt-10 h-max flex justify-center">
                             <Image
-                                src={"/static/StefanMynd.jpg"}
+                                src={me}
                                 height="300"
                                 width="300"
-                                alt="me"
+                                alt="literally me"
                             />
                         </div>
 
