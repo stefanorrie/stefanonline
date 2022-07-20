@@ -1,11 +1,26 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import me from "../public/StefanMynd.jpg";
 import { Header } from "../components/header/header";
 import styles from "../styles/Home.module.css";
-import me from "../public/StefanMynd.jpg";
+import { Bubble } from "../components/bubble/bubble";
+import { motion } from "framer-motion";
+import { useCallback, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export const Home: NextPage = () => {
+    const [bubbleShown, setBubbleShown] = useState<boolean>(false);
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            setBubbleShown(true);
+        } else {
+            setBubbleShown(false);
+        }
+    }, [inView]);
+
     return (
         <div>
             <Head>
@@ -26,7 +41,9 @@ export const Home: NextPage = () => {
                                 </h1>
                             </div>
                             <div className=" w-screen ">
-                                <div className={`${styles.textBox} w-8/12`}>
+                                <div
+                                    className={`${styles.textBox} w-8/12 text-sm`}
+                                >
                                     My name is Stefán Orri and I am a software
                                     developer. I work at a Icelandic software
                                     company called Sendiráðið located in
@@ -71,7 +88,7 @@ export const Home: NextPage = () => {
                             />
                         </div>
 
-                        <div className={`${styles.textBox} w-8/12`}>
+                        <div className={`${styles.textBox} w-8/12 text-sm`}>
                             Verdana was a popular sans-serif font in early
                             2000s. This was because it was used for Microsoft
                             products. It features a large x-height, and wide
@@ -79,7 +96,21 @@ export const Home: NextPage = () => {
                             screens, but isn't recommended for high quality
                             print. For these reasons, it is such a popular font.
                             Verdana was a challenge to find a good similar
-                            looking font.n
+                            looking font. breyta þessu í about this site?
+                            <div className="mt-32">
+                                <motion.div
+                                    ref={ref}
+                                    initial={{ opacity: 0 }}
+                                    animate={{
+                                        opacity: bubbleShown ? 1 : 0,
+                                        // y: bubbleShown ? 0 : 0,
+                                        // scale: bubbleShown ? 0.2 : 0.2,
+                                    }}
+                                    transition={{ delay: 1, duration: 2 }}
+                                >
+                                    <Bubble />
+                                </motion.div>
+                            </div>
                         </div>
                     </section>
                 </div>
