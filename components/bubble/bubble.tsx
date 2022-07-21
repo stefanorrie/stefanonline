@@ -12,6 +12,7 @@ export const Bubble = () => {
             <a
                 href="https://www.github.com/stefanorrie/"
                 target="_blank"
+                rel="noreferrer"
                 className="m-auto text-xs hover:text-white duration-300"
             >
                 <p className="m-auto text-xs"> @stefanorrie</p>
@@ -29,7 +30,7 @@ export const Bubble = () => {
                         href={"https://www.instagram.com/stefanorrie/"}
                         passHref
                     >
-                        <a target="_blank">
+                        <a target="_blank" rel="noreferrer">
                             <Image
                                 src="/instagram.svg"
                                 width="31px"
@@ -47,7 +48,7 @@ export const Bubble = () => {
                         href={"https://www.facebook.com/stefanorrie/"}
                         passHref
                     >
-                        <a target="_blank">
+                        <a target="_blank" rel="noreferrer">
                             <Image
                                 src="/facebook.svg"
                                 width="30px"
@@ -65,7 +66,7 @@ export const Bubble = () => {
                         href={"https://www.linkedin.com/in/stefanorrie/"}
                         passHref
                     >
-                        <a target="_blank">
+                        <a target="_blank" rel="noreferrer">
                             <Image
                                 src="/linkedin.svg"
                                 width="30px"

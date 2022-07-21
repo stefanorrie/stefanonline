@@ -43,10 +43,8 @@ export const Header = () => {
     }, [onScroll]);
 
     return (
-        // <div className="pb-24 fixed">
         <div className={`sticky top-0 ${styles.headerBlur}`}>
             <div className=" flex justify-center flex-row">
-                {/* setja scroll to top virkni á header */}
                 <div
                     className="cursor-pointer"
                     onClick={() =>
