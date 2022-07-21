@@ -10,16 +10,8 @@ import { useCallback, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 export const Home: NextPage = () => {
-    const [bubbleShown, setBubbleShown] = useState<boolean>(false);
+    // const [bubbleShown, setBubbleShown] = useState<boolean>(false);
     const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if (inView) {
-            setBubbleShown(true);
-        } else {
-            setBubbleShown(false);
-        }
-    }, [inView]);
 
     return (
         <div>
@@ -100,13 +92,14 @@ export const Home: NextPage = () => {
                             <div className="mt-32">
                                 <motion.div
                                     ref={ref}
-                                    initial={{ opacity: 0 }}
+                                    initial={{ opacity: 0, scale: 0.8 }}
                                     animate={{
-                                        opacity: bubbleShown ? 1 : 0,
-                                        // y: bubbleShown ? 0 : 0,
+                                        opacity: inView ? 1 : 0,
+                                        scale: inView ? 1.0 : 0.8,
+                                        y: inView ? 0 : 100,
                                         // scale: bubbleShown ? 0.2 : 0.2,
                                     }}
-                                    transition={{ delay: 1, duration: 2 }}
+                                    transition={{ delay: 0.5, duration: 1 }}
                                 >
                                     <Bubble />
                                 </motion.div>
