@@ -154,7 +154,7 @@
         top: 20px;
     }
     .over {
-        height: 200vh;
+        min-height: 200vh;
     }
 }
 
@@ -167,7 +167,7 @@
         top: 20px;
     }
     .over {
-        height: 200vh;
+        min-height: 200vh;
     }
 }
 
@@ -175,7 +175,7 @@
     margin-top: -110vh;
     position: relative;
     background-color: #fff;
-    height: 120vh;
+    min-height: 120vh;
 }
 
 .textBox {
