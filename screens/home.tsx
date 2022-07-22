@@ -28,7 +28,7 @@ export const Home: NextPage = () => {
                     <div className={styles.wrapper}>
                         <section className={styles.under}>
                             <div className="flex justify-center">
-                                <h1 className="text-3xl">
+                                <h1 className="text-2xl">
                                     Stefán Orri Eyþórsson
                                 </h1>
                             </div>
@@ -56,40 +56,44 @@ export const Home: NextPage = () => {
                                     post graduation.
                                     <br />
                                     <br />
-                                    Most of the coding work I have done have
-                                    been various school projects but these days
-                                    my main projects are sites I make at work.
-                                    As for personal coding projects to show off,
-                                    this website is currently the only personal
-                                    project I can show off but this site will
-                                    showcase future projects.
+                                    <div className="hidden md:block">
+                                        Most of the coding work I have done have
+                                        been various school projects but these
+                                        days my main projects are sites I make
+                                        at work. As for personal coding projects
+                                        to show off, this website is currently
+                                        the only personal project I can show off
+                                        but this site will showcase future
+                                        projects.
+                                    </div>
                                 </div>
                             </div>
                         </section>
                     </div>
                     <section className={styles.over}>
                         <div className="mt-10 h-max flex justify-center">
-                            <h1 className="text-3xl">My Work</h1>
+                            <h1 className="text-2xl">About</h1>
                         </div>
                         <div className="mt-10 h-max flex justify-center">
                             <Image
+                                className="rounded-xl"
                                 src={me}
-                                height="350"
-                                width="300"
+                                height="240"
+                                width="200"
                                 alt="literally me"
+                                objectFit="contain"
                             />
                         </div>
 
-                        <div className={`${styles.textBox} w-8/12 text-sm`}>
-                            Verdana was a popular sans-serif font in early
-                            2000s. This was because it was used for Microsoft
-                            products. It features a large x-height, and wide
-                            proportions. The font works great on computer
-                            screens, but isn't recommended for high quality
-                            print. For these reasons, it is such a popular font.
-                            Verdana was a challenge to find a good similar
-                            looking font. breyta þessu í about this site?
-                            <div className="mt-32">
+                        <div
+                            className={`${styles.textBox} w-8/12 text-sm mb-16`}
+                        >
+                            I've worked in various fields of tech. I have sold
+                            tech at Tölvutek, and taught children and teachers
+                            basic programming skills and more, from ages 13 to
+                            16 at Skema. Previously to software developement I
+                            worked as an IT specialist at Skatturinn (IRS).
+                            <div className="mt-32 bottom-16 right-56">
                                 <motion.div
                                     ref={ref}
                                     initial={{ opacity: 0, scale: 0.8 }}
@@ -97,7 +101,6 @@ export const Home: NextPage = () => {
                                         opacity: inView ? 1 : 0,
                                         scale: inView ? 1.0 : 0.8,
                                         y: inView ? 0 : 100,
-                                        // scale: bubbleShown ? 0.2 : 0.2,
                                     }}
                                     transition={{ delay: 0.5, duration: 1 }}
                                 >

@@ -5,7 +5,7 @@ import { useCallback, useEffect } from "react";
 
 export const Bubble = () => {
     return (
-        <div className="absolute bg-neutral-300 flex py-10 flex-col rounded-2xl drop-shadow-2xl justify-self-center md:px-32 px-16">
+        <div className="absolute bg-neutral-300 flex py-10 flex-col rounded-2xl drop-shadow-2xl md:px-32 px-16">
             <div className="m-auto pb-5 text-xl">Want more?</div>
 
             <p className="m-auto text-xs">Check out my github</p>
@@ -15,7 +15,7 @@ export const Bubble = () => {
                 rel="noreferrer"
                 className="m-auto text-xs hover:text-white duration-300"
             >
-                <p className="m-auto text-xs"> @stefanorrie</p>
+                <p className="m-auto text-xs">@stefanorrie</p>
             </a>
             <p className="m-auto text-xs"> or be in touch via</p>
 
