@@ -142,6 +142,7 @@
     }
     .under {
         top: 20px;
+        height: 280vh;
     }
 }
 
@@ -165,6 +166,7 @@
     }
     .under {
         top: 20px;
+        height: 280vh;
     }
     .over {
         min-height: 200vh;
