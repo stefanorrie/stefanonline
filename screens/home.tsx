@@ -26,13 +26,13 @@ export const Home: NextPage = () => {
                 </div>
                 <div className="flex-col flex pt-5 pb-5">
                     <div className={styles.wrapper}>
-                        <section className={styles.under}>
+                        <div className={styles.under}>
                             <div className="flex justify-center">
                                 <h1 className="text-2xl">
                                     Stefán Orri Eyþórsson
                                 </h1>
                             </div>
-                            <div className=" w-screen ">
+                            <div className="w-screen ">
                                 <div
                                     className={`${styles.textBox} w-8/12 text-sm`}
                                 >
@@ -68,9 +68,9 @@ export const Home: NextPage = () => {
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
-                    <section className={styles.over}>
+                    <div className={styles.over}>
                         <div className="mt-10 h-max flex justify-center">
                             <h1 className="text-2xl">About</h1>
                         </div>
@@ -108,7 +108,7 @@ export const Home: NextPage = () => {
                                 </motion.div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
