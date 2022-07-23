@@ -86,14 +86,14 @@ export const Home: NextPage = () => {
                         </div>
 
                         <div
-                            className={`${styles.textBox} w-8/12 text-sm mb-16`}
+                            className={`${styles.textBox} w-8/12 text-sm mb-16 flex flex-col justify-center items-center`}
                         >
                             I've worked in various fields of tech. I have sold
                             tech at Tölvutek, and taught children and teachers
                             basic programming skills and more, from ages 13 to
-                            16 at Skema. Previously to software developement I
+                            16 at Skema. Previously to software development I
                             worked as an IT specialist at Skatturinn (IRS).
-                            <div className="mt-32 bottom-16 right-56">
+                            <div className="mt-32 ">
                                 <motion.div
                                     ref={ref}
                                     initial={{ opacity: 0, scale: 0.8 }}
