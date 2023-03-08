@@ -74,7 +74,22 @@ export const Home: NextPage = () => {
                                             >
                                                 {' '}
                                                 follower-following difference
-                                                checker for Instagram
+                                                checker for Instagram.
+                                            </a>
+                                        </Link>
+                                        <br />
+                                        <br />I am also proud to show off my
+                                        B.Sc. project,{' '}
+                                        <Link
+                                            href={'https://hugtakasafn.is/'}
+                                            passHref
+                                        >
+                                            <a
+                                                className="underline hover:text-[#47b2ff]  transition-colors duration-500"
+                                                target={'_blank'}
+                                            >
+                                                {' '}
+                                                Hugtakasafn ferðaþjónustunnar
                                             </a>
                                         </Link>
                                     </div>
